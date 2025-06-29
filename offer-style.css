@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Body */
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 270px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+  }
+  
+  .brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 30px; 
+  }
+  
+  .logo {
+    width: 72px;
+    height: auto;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h2 a {
+    text-decoration: none;
+  }
+  
+  h2 a span {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h2 a span:first-child {
+    color: orange;
+  }
+  
+  h2 a span:last-child {
+    color: #00bcd4;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebars a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 100;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 10px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    width: 230px;
+    height: auto;
+    font-family: 'Montserrat',sans-serif;
+  }
+  
+  .sidebars a:hover,
+  .sidebars a.active {
+    background-color: rgba(245, 124, 0, 0.1);
+    color: #F57C00;
+
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .product-information{
+    margin-left: 20px;
+    padding: 30px;
+    padding-left: 50px;
+    display: inline-block;
+    width: 55vw;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid rgba(45,45,45, 0.25);
+    margin-top: 30px;
+  }
+
+  .product-information h3{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .product-information p{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .product-information .guide{
+    font-size: 12px;
+    color: #2d2d2d;
+    padding: 10px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+
+  .search-bar{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  .category{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid black;
+  }
+
+  .Submit-btn {
+    background-color: #F57C00;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Montserrat',sans-serif;
+    padding: 8px 10px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: #F57C00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .popup p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;  /* Adjust margin to remove extra space */
+  }
+  
+  .popup-content {
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: transparent;
+  }
+
+  .option{
+    background-color: #ffffff;
+    color: #F57C00;
+  }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TinyCart - Create Listing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="offer-style.css">
+</head>
+<body>
+    
+  <div class="sidebar">
+    <div class="brand-container" style="display: flex; justify-content: center;text-align: center;">
+        <img src="img/logo.png" alt="" class="logo" style="width: 72px; height: auto;">
+        <h2><a href="index.html" style="text-decoration: none;"><span style="color: orange;">Tiny<span style="color: #00bcd4;">Trade</span></span></a></h2>
+    </div>
+    <div>
+        <a href="profile.html" style="display: flex; justify-content: center; text-decoration: none;color: black;">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                <img src="img/shop/sidebar/Profile.png" alt="" style="width: 51px; height: auto;">
+                <div>
+                    <p style="font-size: 17px; font-family: 'Montserrat',sans-serif;">Iah Sopiah</p>
+                    <p style="font-size: 12px; font-family: 'Montserrat',sans-serif;">iah.sopiah@gmail.com</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <nav>
+      <ul class="sidebars">
+        <li>
+            <a href="shop.html" >
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/arcticons_samsung-galaxy-shop.png" alt="">
+                    <p>Shop</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="trade.html">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/la_exchange-alt.png" alt="">
+                    Trade
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="forum-foryou.html" style="display: flex; justify-content: center;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/mdi-light_forum.png" alt="">
+                    Forum
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="insights.html" style="display: flex; justify-content: center;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/arcticons_emoji-lamp.png" alt="">
+                    Insight
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="listing.html" style="display: flex; justify-content: center;">
+              <button style="display: flex; justify-content: center; align-items: center; border: none; background-color: #F57C00; border-radius: 30px; padding: 15px; color: white; font-weight: 600;">
+                Create Listing +
+              </button>
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-content">
+    <div class="title">
+        <a href="description-trade.html" style="margin-top: -10px;"><img src="img/offer/ion_chevron-back.png" alt="" style="height: 30px; width: 30px;"></a>
+        <h3 style="font-family: 'Montserrat',sans-serif; font-weight: 800; font-size: 35px; margin-bottom: 20px;">Create Listing</h3>
+    </div>
+
+    <h3 style="font-family: 'Montserrat',sans-serif; font-weight: 800; font-size: 20px; margin-bottom: 20px; margin-top: 20px; margin-left: 20px;">Describe Your Product</h3>
+
+    <div class="product-information">
+        <h3>Product Information</h3>
+        <p>Product Name <span style="color: red;">*</span></p>
+        <input type="text" placeholder="Ex: sepatu cowo (jenis/kategori produk) + mamitoko (merek) + kanvas hitam (keterangan)" alt="search-bar" class="search-bar">
+        <p class="guide">Product name must be at least 25 characters and include brand, type, color, material, or model.</p>
+
+        <p>Category <span style="color: red;">*</span></p>
+        <select class="category" style="color: white; background-color: #f57c00; border: none;">
+            <option class="option" value="Choose a Category">Choose a Category</option>
+            <option class="option" value="Apparel Top">Apparel Top</option>
+            <option class="option" value="Apparel Bottom">Apparel Bottom</option>
+            <option class="option" value="Shoes">Shoes</option>
+            <option class="option" value="Toys">Toys</option>
+            <option class="option" value="Books">Books</option>
+            <option class="option" value="Accessories">Accessories</option>
+            <option class="option" value="Infant/Toddler Equipment">Infant/Toddler Equipment</option>
+        </select>
+        <p class="guide">Choose the correct category, as service fees depend on it. TinyTrade may change the category if it's inaccurate.</p>
+
+        <p>Description <span style="color: red;">*</span></p>
+        <textarea class="search-bar" placeholder="Write description about your product" style="height: 150px;"></textarea>
+        <p class="guide">Add a clear and complete product description. Include key details like <br>size, color, and material to help seller understand your product.</p>
+    </div>
+
+    <div class="product-information">
+        <h3>Product Details</h3>
+        <p>Product Photo <span style="color: red;">*</span></p>
+        <label for="file-upload">
+            <img src="img/offer/Group 191 (2).png" alt="">
+        </label>
+        <label for="file-upload">
+            <img src="img/offer/Group 191 (2).png" alt="">
+        </label>
+        <label for="file-upload">
+            <img src="img/offer/Group 191 (2).png" alt="">
+        </label>
+        <label for="file-upload">
+            <img src="img/offer/Group 191 (2).png" alt="">
+        </label>
+        <label for="file-upload">
+            <img src="img/offer/Group 191 (2).png" alt="">
+        </label>
+        <input type="file" id="file-upload" style="display: none;">
+        <p class="guide">Product name must be at least 25 characters and include brand, type, color, material, or model.</p>
+    </div>
+
+    <div class="product-information">
+        <h3>Additional Information</h3>
+        <p>Listing Type <span style="color: red;">*</span></p>
+        <select class="search-bar" style="color: white; background-color: #f57c00; border: none;">
+            <option class="option" value="Shop">Shop</option>
+            <option class="option" value="Trade">Trade</option>
+        </select>
+        <p class="guide">Pick "Shop" to sell, pick "Trade" for a barter.</p>
+        <p>Price <span style="color: red;">*</span></p>
+        <input type="text" name="" id="" style="border-radius: 5px; border: 1px solid black; padding: 10px;">
+        <p class="guide">Set your price as you wish/What do you want inturn for this item?</p>
+        <p>Your Location <span style="color: red;">*</span></p>
+        <select class="search-bar" style="color: white; background-color: #f57c00; border: none;">
+            <option class="option" value="Choose a region/city">Choose a region/city</option>
+            <option class="option" value="Tangerang">Tangerang</option>
+            <option class="option" value="East Jakarta">East Jakarta</option>
+            <option class="option" value="West Jakarta">West Jakarta</option>
+            <option class="option" value="North Jakarta">North Jakarta</option>
+            <option class="option" value="South Jakarta">South Jakarta</option>
+            <option class="option" value="Bekasi">Bekasi</option>
+            <option class="option" value="Bogor">Bogor</option>
+        </select>
+        <p class="guide">Help seller identify location and choose the best shipping method.</p>
+
+        <p>Shipment Method <span style="color: red;">*</span></p>
+        <select class="search-bar" style="color: white; background-color: #f57c00; border: none;">
+            <option class="option" value="Choose Shipment Method">Choose Shipment Method</option>
+            <option class="option" value="Meet-Up">Meet-Up</option>
+            <option class="option" value="Drop-Point">Drop-Point</option>
+        </select>
+        <p class="guide">Only seller-defined shipping methods can be selected. To request a different method, kindly contact the seller.</p>
+    </div>
+    <button class="Submit-btn" onclick="showPopup('popup1', 'Request has been submitted!'); goToLink();" style="width: fit-content;">Submit Listing + </button>
+
+    <div id="popup1" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+              <p id="popup-message"></p>
+            </div>
+          </div>
+  </div>
+
+  <script>
+    function showPopup(popupId, message) {
+      const popup = document.getElementById(popupId);
+      if (!popup) return;
+
+      popup.style.display = "block";
+      popup.querySelector('#popup-message').textContent = message;
+
+      setTimeout(() => {
+        closePopup(popupId);
+      }, 2500);
+    }
+
+    function closePopup(popupId) {
+      const popup = document.getElementById(popupId);
+      if (popup) {
+        popup.style.display = "none";
+      }
+    }
+
+    function wait(ms){
+        return new Promise(resolve=> setTimeout(resolve,ms));
+    }
+
+    async function goToLink(){
+        await wait(3000);
+        window.location.href = "trade.html";
+    }
+  </script>
+
+</body>
+</html>

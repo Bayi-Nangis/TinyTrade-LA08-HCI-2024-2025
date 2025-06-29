@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Page </title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./loginstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <form action="profile.html" method="GET">
+
+        <div id="login1" class="login-flex-childs">
+            <div class="logo">
+                <img src="./img/logo.png" alt="TinyTrade Logo">
+                <span> TinyTrade </span>
+            </div>
+            <h2> Be a part of us. </h2>
+            <div class="bottom-shadow"></div>
+        </div>
+
+        <div id="login2" class="login-flex-childs">
+            <a href="./index.html" id="go-main"> <img src="./img/left-arrow.png" alt="left-arrow"> </a>
+            <h2> Enter your <br> informations below. </h2>
+            <section id="login-box">
+                <div id="input1">
+                    <label for="email"> Your email </label> <br>
+                    <input type="email" placeholder="Your email here" required> <br>
+                </div>
+                <div id="input2">
+                    <div class="input-sections">
+                        <label for="password"> Your password </label> <br>
+                        <input type="password" placeholder="Your password  here" id="password" required>
+                        <!-- <box-icon name='dizzy' type='solid' ></box-icon> -->
+                        <img src="./img/eyeclose.png" alt="Eye Icon" id="eyeicon">
+                    </div>
+                </div>
+
+                <a id="forgot-password" href=""> Forgot password? </a>
+                <button id="login-btn" type="submit"><a href="profile.html">Log in</a> </button>
+                <p> Don't have an account? </p>
+                <button id="signup-btn" type="button"><a href="./signup.html"> Sign Up </a></button>
+            </section>
+        </div>
+
+    </form>
+
+    <!-- <button id="home-btn"><a href="./index.html"> Home </a></button> -->
+    
+    <script>
+
+        let eyeicon = document.getElementById("eyeicon");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = function(){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicon.src = "./img/eyeopen.png";
+            } else {
+                password.type = "password";
+                eyeicon.src = "./img/eyeclose.png";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

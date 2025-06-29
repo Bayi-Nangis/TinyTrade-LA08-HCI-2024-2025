@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TinyCart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="description-style.css">
+</head>
+<body>
+    
+  <div class="sidebar">
+    <div class="brand-container" style="display: flex; justify-content: center;text-align: center;">
+        <img src="img/logo.png" alt="" class="logo" style="width: 72px; height: auto;">
+        <h2><a href="index.html" style="text-decoration: none;"><span style="color: orange;">Tiny<span style="color: #00bcd4;">Trade</span></span></a></h2>
+    </div>
+    <div>
+        <a href="profile.html" style="display: flex; justify-content: center; text-decoration: none;color: black;">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                <img src="img/shop/sidebar/Profile.png" alt="" style="width: 51px; height: auto;">
+                <div>
+                    <p style="font-size: 17px; font-family: 'Montserrat',sans-serif;">Iah Sopiah</p>
+                    <p style="font-size: 12px; font-family: 'Montserrat',sans-serif;">iah.sopiah@gmail.com</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <nav>
+      <ul class="sidebars">
+        <li>
+            <a href="shop.html" >
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/arcticons_samsung-galaxy-shop.png" alt="">
+                    <p>Shop</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="active" href="trade.html">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/la_exchange-alt.png" alt="">
+                    Trade
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="forum-foryou.html" style="display: flex; justify-content: center;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/mdi-light_forum.png" alt="">
+                    Forum
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="insights.html" style="display: flex; justify-content: center;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 15px;">
+                    <img src="img/shop/sidebar/arcticons_emoji-lamp.png" alt="">
+                    Insight
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="listing.html" style="display: flex; justify-content: center;">
+              <button style="display: flex; justify-content: center; align-items: center; border: none; background-color: #F57C00; border-radius: 30px; padding: 15px; color: white; font-weight: 600;">
+                Create Listing +
+              </button>
+            </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main-content">
+    <h3 style="font-family: 'Montserrat',sans-serif; font-weight: 800; font-size: 35px; margin-bottom: 20px;">Trade</h3>
+    <div class="search-filter-container" style="margin-bottom: 30px;">
+      <div style="display: flex; justify-content: center; gap: 15px; align-items: center;">
+        <input type="text" placeholder="What Are You Looking For?" class="search-bar">
+        <a href="notification.html"><img src="img/shop/clarity_notification-line.png" alt="" style="width: 27px; height: 27px;"></a>
+        <a href="chat.html"><img src="img/shop/fluent_chat-20-regular.png" alt="" style="width: 28px; height: 28px;"></a>
+        <a href="tradecart.html"><img src="img/shop/bitcoin-icons_cart-outline.png" alt="" style="width: 32px; height: 32px;"></a>
+      </div>
+  
+      <div style="display: flex; gap: 20px; justify-content: flex-start; align-items: center; margin-top: 15px;"> 
+        <select class="filter-bar">
+          <option class="options" value="">All Categories</option>
+          <option class="options" value="toys">Toys</option>
+          <option class="options" value="furniture">Furniture</option>
+          <option class="options" value="clothing">Clothing</option>
+          <option class="options" value="gear">Baby Gear</option>
+        </select>
+  
+        <select class="filter-bar">
+          <option class="options" value="">All Times</option>
+          <option class="options" value="Newest">Newest</option>
+          <option class="options" value="Oldest">Oldest</option>
+        </select>
+  
+        <label><input type="checkbox" value="Favourites" style="width: 30px; transform: scale(1.5); accent-color: #F57C00; "> Favourites</label>
+      </div>
+    </div>
+
+    <div class="cart-container">
+      <div style="display: flex; gap: 10px;">
+        <div style="display: flex; gap: 30px; width: 300px; height: 300px;" class="cart-image-container">
+          <img src="img/cart/Rectangle 120.png" alt="">
+          <img src="img/cart/Rectangle 122.png" alt="">
+          <img src="img/cart/Rectangle 121.png" alt="">
+        </div>
+        <div class="seller-profile">
+          <div style="display: flex; gap: 10px;">
+            <img src="img/cart/profile janda.png" alt="" style="width: 41px; height: 41px;">
+            <div style="display: inline-block; gap: 10px;">
+              <p style="font-size: 15px; font-family: 'Montserrat',sans-serif; font-weight: 600;">Janda Pulo Gebang</p>
+              <p style="font-size: 15px; font-family: 'Montserrat',sans-serif; margin-top: -25px;">@wtsbutuhduit</p>
+            </div>
+          </div>
+          <img src="img/cart/Group 154.png" alt="">
+          <button onclick="showPopup('popup1', 'Chat Request has been sent!')" style="border: none; background: transparent;"><img src="img/cart/Group 153.png" alt="" style="width: 100%; text-align: center; margin-top: 20px;"></button>
+          <div id="popup1" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+              <p id="popup-message"></p>
+            </div>
+          </div>
+          <p style="text-align: center; margin-top: 20px;">Make Offer</p>
+          <div style="display: flex; justify-content: center; gap: 20px; text-align: center; align-items: center;">
+            <input type="text" placeholder="Initial Offer.." style="font-family: 'Montserrat',sans-serif; font-size: 16px; border-radius: 20px; border: 1px solid #ccc; padding: 10px 12px; width: 90%; margin-top: -10px;">
+            <button onclick="showPopup('popup2', 'Offer has been sent!')" style="border: none; background: transparent;"><img src="img/cart/send button.png" alt=""></button>
+            <div id="popup2" class="popup" style="display: none;">
+              <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+                <p id="popup-message"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-name-price">
+        <h3 class="name">Aksesoris bayi laki2 topi kupluk</h3>
+        <h3 class="price">Need: Clothes / Shoes (Boy, 3y)</h3>
+      </div>
+      <div class="description">
+        <img src="img/cart/trade desc.png" alt="" style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: left; text-align: le; gap: 30px;">
+          <a href="offer.html"><img src="img/cart/trade.png" alt=""></a>
+          <div id="popup3" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+              <p id="popup-message"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/trade/Group 191 (5).png" alt="" style="margin-top: 260px;">
+    </div>
+  </div>
+
+  <script>
+    function showPopup(popupId, message) {
+      const popup = document.getElementById(popupId);
+      if (!popup) return;
+
+      popup.style.display = "block";
+      popup.querySelector('#popup-message').textContent = message;
+
+      setTimeout(() => {
+        closePopup(popupId);
+      }, 2500);
+    }
+
+    function closePopup(popupId) {
+      const popup = document.getElementById(popupId);
+      if (popup) {
+        popup.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

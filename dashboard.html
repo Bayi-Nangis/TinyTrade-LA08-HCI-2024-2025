@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./loginstyle.css">
+</head>
+<body>
+
+    <section id="header">
+            <a href="./index.html" class="brand">
+                <img src="img/logo.png" class="logo" alt="" style="width: 50px; height: auto;">
+                <span class="company-name" style="font-family: Poppins,sans-serif;"><span class="brand-name">Tiny<span class="highlight">Trade</span></span>
+            </a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a class="active" href="profile.html">PROFILE</a></li>
+                </ul>
+            </div>
+    </section>
+
+    <div class="container">
+    <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li> <a href="./profile.html"> <img src="./img/My Profile.png" alt="My Profile" style="width: 25px; height: 25px; transform: translateY(5px);"> My Profile </a> </li>
+                <li> <span> 💵 </span> Billing </li>
+                <li> <a href="./security.html"> <img src="./img/Security.png" alt="Security" style="width: 25px; height: 25px; transform: translateY(5px);"> Security </a> </li>
+                <li> <img src="./img/Notification.png" alt="Notification"> Notification</li>
+                <li class="active"> <a href="./dashboard.html"> 📊 Dashboard </a></li>
+                <li> <img src="./img/Rate.png" alt="Rate" style="width: 30px; height: 30px; transform: translateX(-4px); margin-right: -5px;"> Rate</li>
+                <li> <img src="./img/Help & Support.png" alt="Help & Support"> Help & Support</li>
+                <li> <img src="./img/Terms & Conditions.png" alt="Terms & Conditions" style="width: 25px; height: 25px; transform: translateX(-2px); margin-right: -1.5px;"> Terms & Conditions</li>
+                <li> 🚪 Log Out </li>
+                <li> <a href="./forum-foryou.html"> Forum (sementara) </a> </li>
+            </ul>
+        </div>
+
+    <div class="main">
+        <div class="dashboard-header">Dashboard</div>
+        <p class="last-updated">Last updated: May 11th, 2025 09:45 WIB</p>
+
+        <div class="stats">
+            <div> <span> Balance </span> <br> <div class="indiv-stats">Rp 423,765</div> </div>
+            <div> <span> Sold Products </span> <br> <div class="indiv-stats"> 4 </div> </div>
+            <div> <span> Products Viewed </span> <br> <div class="indiv-stats"> 43 </div> </div>
+         <a href="#" id="view-details"> View Details </a>
+        </div>
+
+        <div class="chart"> <img src="./img/Dashboard Chart.png" alt="" width="100%" height="100%"> </div>
+
+        <div class="sub-main">
+            <h4> Your Products (20) </h4>
+            <a href="#" id="edit"> Edit </a>
+        </div>
+
+        <div class="products">
+
+            <div class="products-list">
+
+                <div class="product-item">
+                    <img src="./img/Preloved New Balance Sepatu Cewek.jpg" alt="Preloved New Balance Sepatu Cewek" width="17.5%" height="17.5%">
+                    <div class="product-info">
+                        Preloved New Balance Sepatu Cewek <br>
+                        <p> Rp 300,000 </p>
+                    </div>
+                    <button class="remove">x</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="./img/Kaos polos biru anak.jpg" alt="Kaos polos biru anak" width="17.5%" height="17.5%">
+                    <div class="product-info">
+                        Kaos polos biru anak <br>
+                        <p> Need: Tops </p>
+                    </div>
+                    <button class="remove">x</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="./img/Atasan anak 18-24m.jpg" alt="Atasan anak 18-24m" width="17.5%" height="17.5%">
+                    <div class="product-info">
+                        Atasan anak 18-24m <br>
+                        <p> Rp 10,000 </p>
+                    </div>
+                    <button class="remove">x</button>
+                </div>
+            
+                <div class="product-item">
+                    <img src="./img/Set makan sendok garpu anak bayi balita.jpg" alt="Set makan sendok garpu anak bayi balita" width="17.5%" height="17.5%">
+                    <div class="product-info">
+                        Set makan sendok garpu anak bayi balita <br>
+                        <p> Rp 70,000 </p>
+                    </div>
+                    <button class="remove">x</button>
+                </div>
+        
+                <div class="product-item">
+                    <img src="./img/Dress Batik Anak.jpg" alt="Dress Batik Anak" width="17.5%" height="17.5%">
+                    <div class="product-info">
+                        Dress Batik Anak <br>
+                        <p> Need: Shoes </p>    
+                    </div>
+                    <button class="remove">x</button>
+                </div>
+
+                <div id="more"> More </div> <br>
+                <div class="add-product-btn">Add New Products</div>
+
+            </div>
+
+            <div class="trade-card"> 
+                <h4> Trade Requests (2) </h4>
+                <div>
+                    <img src="./img/New Balance Kids.jpg" alt="New Balance Kids">
+                    <h3>New Balance kids 237 sepatu anak</h3>
+                    <p style="font-size: 90%; color: orange; font-weight: 700; margin-bottom: 0;"><strong>Category:</strong> Shoes</p>
+                    <p><strong>Size:</strong> 27.5</p>
+                    <p>Sepatu New Balance 237 <br> Size 27.5 <br> Insolde 16cm on tag <br> Tag kanan kiri beda <br> Insolde masih bawaan</p>
+                    <p style="font-size: 75%;"><em>West Jakarta • Meet-up</em></p>
+
+                    <div class="trade-buttons">
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button id="prev-btn"> < </button>
+                        <button id="next-btn"> > </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="trade-card"> 
+
+                <h4> Trade Requests (2) </h4>
+
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="./img/New Balance Kids.jpg" alt="New Balance Kids">
+                        <h3>New Balance kids 237 sepatu anak</h3>
+                        <p style="font-size: 90%; color: orange; font-weight: 700; margin-bottom: 0;"><strong>Category:</strong> Shoes</p>
+                        <p><strong>Size:</strong> 27.5</p>
+                        <p>Sepatu New Balance 237 <br> Size 27.5 <br> Insolde 16cm on tag <br> Tag kanan kiri beda <br> Insolde masih bawaan</p>
+                        <p style="font-size: 75%;"><em>West Jakarta • Meet-up</em></p>
+
+                        <div class="trade-buttons">
+                            <button class="accept-btn">Accept</button>
+                            <button class="reject-btn">Reject</button>
+                        </div>
+                    </div> 
+
+                    <div class="slide">
+                        <img src="./img/Profile Pic.jpg" alt="PP">
+                        <h3>Converse kids Chuck Taylor</h3>
+                        <p style="font-size: 90%; color: orange; font-weight: 700; margin-bottom: 0;"><strong>Category:</strong> Shoes</p>
+                        <p><strong>Size:</strong> 29</p>
+                        <p>Sepatu Converse Chuck Taylor <br> Size 29 <br> Slightly used <br> Clean sole</p>
+                        <p style="font-size: 75%;"><em>South Jakarta • Meet-up</em></p>
+                        <div class="trade-buttons">
+                            <button class="accept-btn">Accept</button>
+                            <button class="reject-btn">Reject</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button id="prev-btn"> < </button>
+                    <button id="next-btn"> > </button>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

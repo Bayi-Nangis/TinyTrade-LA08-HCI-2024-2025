@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff; color: #333;
+}
+.forum {
+    width: 800px;
+    margin-left: 300px;
+    margin-right: -100px;
+    padding: 1rem;
+    /* display: none; */
+    transform: translateY(-775px);
+}
+
+/* .forum:has(.forum-header) {
+    transform: translateX(-100px);
+} */
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    color: #1a1a1a;
+    padding: 5px 0 0 6.5px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 0px;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: orange;
+}
+
+.brand-name .highlight {
+    color: #00bcd4;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid #ddd; */
+    margin-bottom: -20px;
+    width: 15%;
+    font-size: x-small;
+}
+
+.profile-card>div+div>div:first-child {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.profile-picture-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ccc;
+    object-fit: cover;
+}
+
+.sidebar {
+    width: 220px;
+    background: #ffffff;
+    /* border-right: 1px solid #ddd; */
+    min-height: 100vh;
+    padding: 20px;
+    flex-shrink: 0;
+}
+.sidebar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 100;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 10px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    width: 230px;
+    height: auto;
+    font-family: 'Montserrat',sans-serif;
+  }
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: small;
+}
+
+.sidebar li:hover {
+    /* transform: translateX(15px); */
+    background-color: #fff2e3;
+    border-radius: 10px;
+    padding-left: 12px;
+    font-weight: bold;
+    color: #ff914d;
+}
+
+.sidebar li img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 5px;
+    display: inline-block;
+    /* transform: translateY(2px); */
+}
+
+.sidebar li:hover a {
+    color: #ff914d;
+}
+
+.sidebar li:nth-last-child(2) {
+    transform: translateY(-150px);
+    position: absolute;
+    bottom: 0;
+}
+
+.sidebar li:nth-last-child(2):hover {
+    padding-right: 20px;
+    background-color: red;
+    color: #fff;
+}
+
+.sidebar li.active {
+    background-color: #fff2e3;
+    border-radius: 10px;
+    padding-left: 12px;
+    /* font-weight: bold; */
+    color: #ff914d;
+}
+
+.sidebar li.active a {
+    color: #ff914d;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: 700; margin-bottom: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.search-bar img[alt="Search"] {
+    position: absolute;
+    right: 15%;
+}
+
+.side-icons {
+    transform: translateX(20px);
+    display: flex;
+    justify-content: space-between;
+    gap: 7.5px;
+}
+
+/* .tabs {
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+} */
+
+/* .tabs span {
+    cursor: pointer;
+    color: orange;
+    font-weight: 200;
+    margin: 15px 50px;
+    transform: translateX(75px);
+} */
+
+/* .tabs .active {
+    color: #FF7E00;
+    border-bottom: 2px solid #FF7E00;
+    font-weight: 700;
+} */
+
+.whats-happening {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.whats-happening>div span:first-child {
+    font-weight: 600;
+}
+
+.whats-happening>div span:first-child:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.whats-happening>div span:nth-last-child(2) {
+    color: orange;
+    font-size: 80%;
+    margin-top: 5px;
+}
+
+.mini-separator {
+    width: 200px;
+    background-color: #ddd;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.whats-happening>div {
+    position: relative;
+}
+
+.whats-happening>div img {
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 10%;
+}
+
+.whats-happening>div img:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+}
+
+.post .header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.post .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post .header .name {
+    font-weight: 600;
+    font-size: 70%;
+    display: inline-block;
+}
+
+.post .header .time {
+    color: rgb(3, 197, 197);
+    font-weight: 500;
+    transform: translateY(-1.75px);
+    font-size: 40%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.post .content span {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.post .content:not(span){
+    font-size: 12.5px;
+}
+
+.post-content {
+    padding: 5px;
+}
+
+.post img.content-img {
+    width: 241px;
+    height: 181px;
+    object-fit: cover;
+    float: left;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.post-content>div {
+    margin-top: 20px;
+}
+
+.post .actions {
+    display: flex;
+    gap: 1rem;
+    font-size: .88rem;
+    color: #999;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+.post .actions>div>img {
+    width: 20px;
+    transform: translateY(5px);
+}
+
+.post .actions>div>img:hover {
+    cursor: pointer;
+    /* transform: scale(1.025); */
+}
+
+.post .actions>div>img+span {
+    font-size: x-small;
+    font-weight: 500;
+    transform: translateY(-3px);
+}
+
+.post .actions>div>img[alt="Share"] {
+    transform: translateY(8px);
+    scale: .9;
+}
+
+.new-post {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+}
+
+.new-post input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+}
+
+#more {
+    text-decoration: underline;
+    color: #3e95ff;
+    text-align: center;
+    font-size: 70%;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+#more:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    background-color: #ddd;
+    height: 1px;
+    
+}
+
+.post-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-header .name {
+    font-weight: 600;
+}
+
+.post-input {
+    color: #888;
+    font-size: 14px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+}
+
+.post-actions img {
+    width: 20px;
+    height: 100%;
+}
+
+.post-actions img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.post-actions img:nth-child(4) {
+    transform: scale(.8);
+}
+
+.post-actions img:nth-child(4):hover {
+    transform: scale(.85);
+}
+
+.post-actions img:last-child {
+    scale: .8;
+    transform: translateY(-3px);
+}
+
+.post-actions img:last-child:hover {
+    scale: .85;
+    transform: translateY(-3px);
+}
+
+.post-add-button {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+
+/* Forum Following */
+.forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 40px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.search-bar .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 50px;
+    font-size: 14px;
+}
+
+.tabs span {
+    cursor: pointer;
+    color: orange;
+    font-weight: 200;
+}
+
+.tabs .active {
+    color: #ff914d;
+    border-bottom: 2px solid #ff914d;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.who-to-follow {
+    margin-top: 30px;
+}
+
+.who-to-follow h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.follow-list {
+    display: flex;
+    gap: 30px;
+}
+
+.follow-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.follow-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.follow-info .name {
+    font-weight: 600;
+}
+
+.follow-info .handle {
+    font-size: 12px;
+    color: #888;
+}
+
+.follow-info>span:first-child {
+    font-size: smaller;
+}
+
+.follow-button {
+    background-color: #ff914d;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 13.5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.follow-button:hover {
+    background-color: orangered;
+}
+
+.vertical-supporter {
+    width: 50px;
+    background-color: blue;
+    height: 50px;
+}

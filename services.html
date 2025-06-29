@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyTrade - Services</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"> 
+
+  <style>
+    .slider {
+  position: relative;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  z-index: 100;
+}
+
+#slide-container {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 60px 0;
+      transition: background-image 0.5s ease-in-out;
+}
+
+.slide-content {
+   max-width: 50%;
+}
+
+.slide-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.slide-content .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.slide-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.dots {
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: center;
+  gap: 8px; 
+  margin-top: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: orange;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #888;
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  user-select: none;
+}
+
+.arrow:hover {
+  color: orange;
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+.fade {
+  animation: fadeIn 0.6s ease-in-out;
+}
+.bottom-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+  <section id="header">
+    <a href="#" class="brand">
+      <img src="img/logo.png" class="logo" alt="" style="width: 50px; height: auto;">
+      <span class="company-name" style="font-family: Poppins,sans-serif;">
+        <span class="brand-name">Tiny<span class="highlight">Trade</span></span>
+      </span>
+    </a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="services.html">SERVICES</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="slide-container" style="background-image: url('img/Services/Rectangle\ 1.png');">
+    <div class="slider" id="slider">
+      <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+  
+      <div class="slide-content" id="text-slide">
+        <h2>Shop</h2>
+        <p>Discover a curated selection of preloved baby essentials at affordable prices. From clothes to toys, every item is chosen with care, helping you save while giving second life to quality goods.</p>
+        <a href="shop.html" class="btn" style="font-family: 'Montserrat',sans-serif; font-size: 20px;">Explore Now</a>
+      </div>
+      <div class="slide-image" id="image-slide">
+        <img src="img/Services/Rectangle 101.png" alt="Slide Image">
+      </div>
+  
+      <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+    </div>
+  
+    <div class="dots" id="dots"></div>
+    <div class="bottom-shadow"></div>
+  </div>
+
+ <script src="script.js"></script>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+</body>
+</html>

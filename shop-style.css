@@ -1,0 +1,249 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Body */
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 270px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+  }
+  
+  .brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 30px; 
+  }
+  
+  .logo {
+    width: 72px;
+    height: auto;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h2 a {
+    text-decoration: none;
+  }
+  
+  h2 a span {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  h2 a span:first-child {
+    color: orange;
+  }
+  
+  h2 a span:last-child {
+    color: #00bcd4;
+  }
+  
+  /* Sidebar Menu */
+  .sidebar ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+    position: relative;
+  }
+  
+  .sidebars a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 100;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 10px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    width: 230px;
+    height: auto;
+    font-family: 'Montserrat',sans-serif;
+  }
+
+  
+  .sidebars a:hover,
+  .sidebars a.active {
+    background-color: rgba(245, 124, 0, 0.1);
+    color: #F57C00;
+
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .main-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .product-card {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 231px;
+    height: 441px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 17px;
+    margin: 10px 0 5px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    color: black
+  }
+
+  .product-card .price {
+    font-size: 17px;
+    margin: 10px 0 5px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    color: orange
+  }
+.product-card .location-icon{
+  width: 15px;
+  height: 15px;
+}
+
+  .product-card .location{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+  }
+  
+  .product-card .location-bar{
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+  }
+  .product-card p {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .product-card a{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+  }
+  
+  .product-card button {
+    margin-top: 10px;
+    background-color: #F57C00;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .product-card button:hover {
+    background-color: darkorange;
+  }
+  
+  .search-filter-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  .filter-bar {
+    padding: 10px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #F57C00;
+    color: white;
+  }
+
+  .shop-navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 300;
+    background-color: white;
+  }
+    .options{
+      background-color: white;
+      border: 1px solid #000000;
+      color: #F57C00;
+      font-family: 'Montserrat',sans-serif;
+      font-weight: 500;
+      border-color: #F57C00;
+    }
+  
+    .options{
+    background-color: white;
+    border: 1px;
+    color: #F57C00;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    border-color: #F57C00;
+  }
